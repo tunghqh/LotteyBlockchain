@@ -1,0 +1,359 @@
+.container {
+    position: relative;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.hero__left {
+    margin-left: 60px;
+    width: 50%;
+}
+.hero__h1{
+    color: var(--white-color);
+    margin: 0;
+    font-size: 70px;
+    line-height: 40px;
+}
+.hero__text{
+    color: var(--text-color);
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 300;
+}
+.hero__h3{
+    color: var(--text-color);
+    font-size: 28px;
+    color: var(--pink-color);
+
+}
+
+
+
+ 
+
+.draw {
+    color: var(--text-color);
+    font-size: 16px;
+}
+.hero__right {
+    position: relative;
+    top: -400px;
+    right: -100px;
+}
+.shape-1 {
+    display: none;
+}
+.shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hero__phone{
+
+}
+
+.hero__man{
+    position: absolute;
+    top: 169px;
+    right: -69px;
+    animation: top-to-bot 4s ease-in forwards infinite alternate;
+}
+.hero__man:hover{
+    /* display: none; */
+    /* animation: left-to-right 5s ease-in forwards infinite alternate; */
+}
+.hero__ripple{
+    position: absolute;
+    top: 111px;
+    right: -125px;
+    animation: left-to-right 3s ease-in forwards infinite alternate;
+}
+
+.hero__ripple2{
+    position: absolute;
+    top: 101px;
+    right: 335px;
+    animation: left-to-right 5s ease-in forwards infinite alternate;
+}
+
+.hero__btc{
+    position: absolute;
+    top: 220px;
+    right: 335px;
+    animation: left-to-right 6s ease-in forwards infinite alternate;
+}
+
+.hero__btc2{
+    position: absolute;
+    top: 0;
+    right: -168px;
+    animation: left-to-right 4s ease-in forwards infinite alternate;
+}
+
+.hero__shape{
+    position: absolute;
+    top: 94px;
+    right: -191px;
+}
+
+.hero__award-bg{
+    position: absolute;
+    top: 243px;
+    right: -152px;
+}
+
+.hero__award{
+    position: absolute;
+    top: 240px;
+    right: -125px;
+    animation: bot-to-top 2s ease-in forwards infinite alternate;
+    
+}
+
+.hero__award-bg2{
+    position: absolute;
+    top: 365px;
+    right: 155px;
+}
+
+.hero__gift{
+    position: absolute;
+    top: 286px;
+    right: 270px;
+    animation: bot-to-top 3s ease-in forwards infinite alternate;
+}
+
+.hero__gift-bg{
+    position: absolute;
+    top: 290px;
+    right: 250px;
+}
+
+.hero__shield{
+    position: absolute;
+    top: 370px;
+    right: 186px;
+    animation: bot-to-top 2s ease-in forwards infinite alternate;
+}
+/* Animation img */
+@keyframes top-to-bot {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
+@keyframes bot-to-top {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateY(15%);
+    }
+}
+@keyframes left-to-right {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
+
+
+
+.feature-mg {
+    margin: 0 100px;
+}
+.single__feature{
+    padding: 40px 40px 39px;
+    background: #252f5a;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in;
+    margin: 20px;
+    border-radius: 10px;
+    transform: translateY(-5%);
+}
+.single-feature-icon {
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 110px;
+    margin-bottom: 20px;
+    background: #242e5a;
+    width: 125px;
+    height: 125px;
+}
+.single-feature-icon-pink{
+    border: 7px solid #f9314b;
+    box-shadow: 0px 0px 0px 15px rgb(249 49 75 / 20%), 0px 0px 0px 15px rgb(249 49 75 / 20%);
+}
+.single-feature-icon-yelow{
+    border: 7px solid #f67a1f;
+    box-shadow: 0px 0px 0px 15px rgb(246 122 31 / 20%), 0px 0px 0px 15px rgb(246 122 31 / 20%);
+}
+.single-feature-icon-violet{
+    border: 7px solid #bc2cdd;
+    box-shadow: 0px 0px 0px 15px rgb(188 44 221 / 20%), 0px 0px 0px 15px rgb(188 44 221 / 20%);
+}
+.single__feature:hover {
+    transform: translateY(-10%);
+}
+.single__feature .title{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.single__feature .text{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 30px;
+}
+.icon{
+    margin-left: 6px;
+    padding-top: 3px;
+}
+.single__feature .text:hover {
+    color: var(--pink-color);
+    cursor: pointer;
+}
+.rules{
+    position: relative;
+    background-color: #0b122e;
+}
+.rules-mg{
+    padding: 60px 0;
+}
+.rules-right {
+    position: absolute;
+    bottom: -410px;
+    right: -460px;
+}
+
+
+.single__game{
+    padding: 40px 40px 39px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in;
+    margin: 20px;
+    border-radius: 10px;
+}
+.single__game .title {
+    margin: 20px 0 0 0;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+.single__game .text{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed; /* Làm cho modal chiếm hết màn hình*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none; /* display: flex + margin: auto  : canh giua */
+  }
+.modal-active {
+    display: flex;
+} 
+  .modal__overlay {
+    position: absolute; /* absolute  đc hiểu là con của modal */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+    animation: fadeIn linear 0.1s;
+  }
+  
+  .modal-body {
+    --growth-from: 0.5;
+    --growth-to: 0.1;
+    margin: auto;
+    position: relative; /* do modal_body sẽ nằm dưới modal__overlay : nên cần position: relative để đẩy body lên */
+    z-index: 1; /* Đây là thuộc tính cần chú ý :z-index số cao hơn sẽ nằm trên  */
+    animation: growth linear 0.1s;
+    margin-top: 200px;
+  }
+.auth-form {
+    width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden; /*Khi con vượt quá cha sẽ ẩn đi */
+    margin: auto;
+    margin-top: 100px;
+  }
+  .social-link {
+      display: flex;
+  }
+  .auth-form__container {
+    padding: 0 32px;
+  }
+  
+  .auth-form__header {
+    display: flex;
+    align-items: center; /* nó cái ở trên 1 xí làm cho nó cân bằng */
+    justify-content: space-between; /* Đẩy 2 item xa ra 2 bên */
+    padding: 0 12px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+.auth-form__heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.auth-form__group {
+    margin: 16px 0;
+}
+.wallet-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 60px 0;
+}
+.id-wallet {
+    font-size: 16px;
+    font-weight: 600;
+}
+.social-link {
+    color: #5930ce;
+}
+.icon-modal {
+    font-size: 20px;
+    margin-right: 6px;
+}
+.showcode {
+    margin-bottom: 2px;
+    color: #5930ce ;
+    margin-right: 20px;
+}
+.icon-modal-veri {
+    color: #0dbb3e;
+}
+.verified {
+    color: #0dbb3e;
+}
+.showcode:hover, .verified:hover{
+    text-decoration: underline;
+}
+.total-money {
+    display: flex;
+    float: right;
+    margin: 20px;
+}
+
+.money {
+    font-weight: 600;
+}

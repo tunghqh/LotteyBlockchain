@@ -1,0 +1,28 @@
+@media (max-width :1024px) {
+
+    .Timer_Loto{
+        width: 1024px;
+    }
+    .Lottery {
+        margin-bottom: 2600px;
+    }
+    .footer__top{
+        display: block !important;
+    } 
+    .footer__social {
+        justify-content: center;
+    }
+    .single__feature-tablet {
+        height: 466px;
+    }
+    .hero__right {
+        display: none;
+    }
+}
+@media (max-width :800px) {
+    .App {
+        display: none;
+    }
+}
+
+

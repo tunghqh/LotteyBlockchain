@@ -1,0 +1,48 @@
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+   border-top: 1px solid #333;
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 140px;
+    border-bottom: 1px solid #ccc;
+}
+.logo-footer {
+    width: 50px;
+}
+.footer__name{
+    font-size: 16px;
+}
+.footer__list{
+    display: flex;
+}
+.footer__item{
+   margin: 0 12px;
+   color: var(--text-color);
+}
+.footer__social{
+    display: flex;
+}
+.social__item{
+    margin: 0 10px;
+}
+.footer__bot{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 140px;
+}
+.github {
+    color: var(--text-color);
+}

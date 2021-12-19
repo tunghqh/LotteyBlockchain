@@ -1,0 +1,122 @@
+/* Modal */
+
+.modal {
+    position: fixed; /* Làm cho modal chiếm hết màn hình*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex; /* display: flex + margin: auto  : canh giua */
+  }
+  .modal__overlay {
+    position: absolute; /* absolute  đc hiểu là con của modal */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+  }
+  
+  .modal-body {
+    --growth-from: 0.5;
+    --growth-to: 0.1;
+    margin: auto;
+    position: relative; /* do modal_body sẽ nằm dưới modal__overlay : nên cần position: relative để đẩy body lên */
+    z-index: 1; /* Đây là thuộc tính cần chú ý :z-index số cao hơn sẽ nằm trên  */
+    animation: fadeIn linear 0.3s;
+    margin-top: 160px;
+  }
+@keyframes fadeIn {
+    from {
+       opacity: 0;
+    }to{
+        opacity: 1;
+    }
+    
+}
+.close-modal {
+    color: #000;
+    position: absolute;
+    top: -9px;
+    right: 1px;
+    border: none;
+    
+}
+.close-modal:hover {
+    color: var(--pink-color);
+    background: none;
+    cursor: pointer;
+}
+.auth-form {
+    width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden; /*Khi con vượt quá cha sẽ ẩn đi */
+    margin: auto;
+    margin-top: 100px;
+  }
+  .social-link {
+      display: flex;
+  }
+  .auth-form__container {
+    padding: 0 32px;
+    position: relative;
+  }
+  
+  .auth-form__header {
+    display: flex;
+    align-items: center; /* nó cái ở trên 1 xí làm cho nó cân bằng */
+    justify-content: space-between; /* Đẩy 2 item xa ra 2 bên */
+    padding: 0 12px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+.auth-form__heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.auth-form__group {
+    margin: 16px 0;
+}
+.wallet-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 60px 0;
+}
+.id-wallet {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.social-link {
+    color: #5930ce;
+}
+.icon-modal {
+    font-size: 20px;
+    margin-right: 6px;
+}
+.showcode {
+    margin-bottom: 2px;
+    color: #5930ce ;
+    margin-right: 20px;
+}
+.icon-modal-veri {
+    color: #0dbb3e;
+}
+.verified {
+    color: #0dbb3e;
+}
+.showcode:hover, .verified:hover,.id-wallet:hover{
+    text-decoration: underline;
+}
+.total-money {
+    display: flex;
+    float: right;
+    margin: 20px;
+}
+
+.money {
+    font-weight: 600;
+}

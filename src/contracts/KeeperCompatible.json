@@ -1,0 +1,302 @@
+{
+  "contractName": "KeeperCompatible",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "OnlySimulatedBackend",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "checkData",
+          "type": "bytes"
+        }
+      ],
+      "name": "checkUpkeep",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "upkeepNeeded",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "performData",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "performData",
+          "type": "bytes"
+        }
+      ],
+      "name": "performUpkeep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"OnlySimulatedBackend\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"checkData\",\"type\":\"bytes\"}],\"name\":\"checkUpkeep\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"upkeepNeeded\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"name\":\"performUpkeep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"checkUpkeep(bytes)\":{\"details\":\"To ensure that it is never called, you may want to add the cannotExecute modifier from KeeperBase to your implementation of this method.\",\"params\":{\"checkData\":\"specified in the upkeep registration so it is always the same for a registered upkeep. This can easilly be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract.\"},\"returns\":{\"performData\":\"bytes that the keeper should call performUpkeep with, if upkeep is needed. If you would like to encode data to decode later, try `abi.encode`.\",\"upkeepNeeded\":\"boolean to indicate whether the keeper should call performUpkeep or not.\"}},\"performUpkeep(bytes)\":{\"details\":\"The input to this method should not be trusted, and the caller of the method should not even be restricted to any single registry. Anyone should be able call it, and the input should be validated, there is no guarantee that the data passed in is the performData returned from checkUpkeep. This could happen due to malicious keepers, racing keepers, or simply a state change while the performUpkeep transaction is waiting for confirmation. Always validate the data passed in.\",\"params\":{\"performData\":\"is the data which was passed back from the checkData simulation. If it is encoded, it can easily be decoded into other types by calling `abi.decode`. This data should not be trusted, and should be validated against the contract's current state.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"checkUpkeep(bytes)\":{\"notice\":\"method that is simulated by the keepers to see if any work actually needs to be performed. This method does does not actually need to be executable, and since it is only ever simulated it can consume lots of gas.\"},\"performUpkeep(bytes)\":{\"notice\":\"method that is actually executed by the keepers, via the registry. The data returned by the checkUpkeep simulation will be passed into this method to actually be executed.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/KeeperCompatible.sol\":\"KeeperCompatible\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/KeeperBase.sol\":{\"keccak256\":\"0xf18ea0e73a567be0d4c80ca6429656b487b86cc09803db4c3c07380501c25681\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c26c4101bb10e44bc3502e42fb8c3d8aceab0e185c1eae7a2a8b140ab5c4a49\",\"dweb:/ipfs/QmYqKSuCTm98hTuNZBfbyYnWyXZBSSF9iAoETUpHN3bsda\"]},\"project:/contracts/KeeperCompatible.sol\":{\"keccak256\":\"0xe124c0b155e39ad800704bab7dce4a9698aa43b923913e473ef70d4ec528fc5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e0d7782de4c2a91023b6bb3155909403fc631c0ebb7544142cf0c2dfc420b571\",\"dweb:/ipfs/QmVDDzpvC9YHf3BkeRpBaHgwmSQouiGiwuM1sPs897rUZA\"]},\"project:/contracts/KeeperCompatibleInterface.sol\":{\"keccak256\":\"0x97160cb87e918783768400b4df0f3df24e0b62c93924387ce4f87f1715f2850f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fbda6532c969fde7a787a69a1f7ad6f81e1651dbdf760c15d0e1bb22d68d8deb\",\"dweb:/ipfs/QmT6wEUkCGrgqYD5oxrSkhaxpb1MDVrTv968ZyMSEWuKc4\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\nimport \"./KeeperBase.sol\";\nimport \"./KeeperCompatibleInterface.sol\";\n\nabstract contract KeeperCompatible is KeeperBase, KeeperCompatibleInterface {}\n",
+  "sourcePath": "E:\\Bao_ve_do_an\\12_12\\lotterry-master\\contracts\\KeeperCompatible.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/KeeperCompatible.sol",
+    "exportedSymbols": {
+      "KeeperBase": [
+        29
+      ],
+      "KeeperCompatible": [
+        38
+      ],
+      "KeeperCompatibleInterface": [
+        57
+      ]
+    },
+    "id": 39,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "absolutePath": "project:/contracts/KeeperBase.sol",
+        "file": "./KeeperBase.sol",
+        "id": 32,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 39,
+        "sourceUnit": 30,
+        "src": "57:26:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/KeeperCompatibleInterface.sol",
+        "file": "./KeeperCompatibleInterface.sol",
+        "id": 33,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 39,
+        "sourceUnit": 58,
+        "src": "84:41:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 34,
+              "name": "KeeperBase",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29,
+              "src": "165:10:1"
+            },
+            "id": 35,
+            "nodeType": "InheritanceSpecifier",
+            "src": "165:10:1"
+          },
+          {
+            "baseName": {
+              "id": 36,
+              "name": "KeeperCompatibleInterface",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 57,
+              "src": "177:25:1"
+            },
+            "id": 37,
+            "nodeType": "InheritanceSpecifier",
+            "src": "177:25:1"
+          }
+        ],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 38,
+        "linearizedBaseContracts": [
+          38,
+          57,
+          29
+        ],
+        "name": "KeeperCompatible",
+        "nameLocation": "145:16:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 39,
+        "src": "127:78:1",
+        "usedErrors": [
+          3
+        ]
+      }
+    ],
+    "src": "32:174:1"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/KeeperCompatible.sol",
+    "exportedSymbols": {
+      "KeeperBase": [
+        29
+      ],
+      "KeeperCompatible": [
+        38
+      ],
+      "KeeperCompatibleInterface": [
+        57
+      ]
+    },
+    "id": 39,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "absolutePath": "project:/contracts/KeeperBase.sol",
+        "file": "./KeeperBase.sol",
+        "id": 32,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 39,
+        "sourceUnit": 30,
+        "src": "57:26:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/KeeperCompatibleInterface.sol",
+        "file": "./KeeperCompatibleInterface.sol",
+        "id": 33,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 39,
+        "sourceUnit": 58,
+        "src": "84:41:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 34,
+              "name": "KeeperBase",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29,
+              "src": "165:10:1"
+            },
+            "id": 35,
+            "nodeType": "InheritanceSpecifier",
+            "src": "165:10:1"
+          },
+          {
+            "baseName": {
+              "id": 36,
+              "name": "KeeperCompatibleInterface",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 57,
+              "src": "177:25:1"
+            },
+            "id": 37,
+            "nodeType": "InheritanceSpecifier",
+            "src": "177:25:1"
+          }
+        ],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 38,
+        "linearizedBaseContracts": [
+          38,
+          57,
+          29
+        ],
+        "name": "KeeperCompatible",
+        "nameLocation": "145:16:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 39,
+        "src": "127:78:1",
+        "usedErrors": [
+          3
+        ]
+      }
+    ],
+    "src": "32:174:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-18T10:50:32.764Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "checkUpkeep(bytes)": {
+        "details": "To ensure that it is never called, you may want to add the cannotExecute modifier from KeeperBase to your implementation of this method.",
+        "params": {
+          "checkData": "specified in the upkeep registration so it is always the same for a registered upkeep. This can easilly be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract."
+        },
+        "returns": {
+          "performData": "bytes that the keeper should call performUpkeep with, if upkeep is needed. If you would like to encode data to decode later, try `abi.encode`.",
+          "upkeepNeeded": "boolean to indicate whether the keeper should call performUpkeep or not."
+        }
+      },
+      "performUpkeep(bytes)": {
+        "details": "The input to this method should not be trusted, and the caller of the method should not even be restricted to any single registry. Anyone should be able call it, and the input should be validated, there is no guarantee that the data passed in is the performData returned from checkUpkeep. This could happen due to malicious keepers, racing keepers, or simply a state change while the performUpkeep transaction is waiting for confirmation. Always validate the data passed in.",
+        "params": {
+          "performData": "is the data which was passed back from the checkData simulation. If it is encoded, it can easily be decoded into other types by calling `abi.decode`. This data should not be trusted, and should be validated against the contract's current state."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "checkUpkeep(bytes)": {
+        "notice": "method that is simulated by the keepers to see if any work actually needs to be performed. This method does does not actually need to be executable, and since it is only ever simulated it can consume lots of gas."
+      },
+      "performUpkeep(bytes)": {
+        "notice": "method that is actually executed by the keepers, via the registry. The data returned by the checkUpkeep simulation will be passed into this method to actually be executed."
+      }
+    },
+    "version": 1
+  }
+}

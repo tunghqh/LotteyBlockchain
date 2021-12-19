@@ -1,0 +1,149 @@
+
+.mytiket-area {
+    margin: 50px 0 300px 0;
+    padding-top: 100px;
+}
+.tiket {
+    background-color:#0e1833;
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    border-radius: 20px;
+    margin: 20px 10px 0;
+    transition: all 0.3s ease-in;
+    position: relative;
+
+}
+
+.ticket_Consolation{
+    background-color: rgb(30, 160, 30);
+    
+}
+
+.ticket_jp{
+    background-color: rgb(194, 36, 54);
+    
+}
+
+.tiket:hover {
+    transform: translateY(-5%);
+}
+.search {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.search:focus {
+    outline: 0;
+}
+.tk__logo {
+    height: 60px;
+    display: flex;
+    margin: auto;
+
+}
+
+.power__play {
+    color: var(--text-color);
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.id__round{
+    color: var(--pink-color);
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+}
+.tiket-buy {
+    display: flex;
+    justify-content: center;
+}
+.tiket-buy .single__number{
+    border: 1px solid;
+    border-radius: 20%;
+    padding: 6px;
+    font-size: 25px;
+    font-family: consolas;
+    margin-right: 5px;
+    font-weight: bold;
+    line-height: 1;
+    color:#d2273c;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 80%);
+}
+
+.id__ticket {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    margin-left: 5px;
+}
+.tickit__text{
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    left: 35px;
+}
+.wallet-price{
+    display: flex;
+    justify-content: center;
+    margin: 0 60px;
+}
+.id__wallet{
+    margin: 15px 0;
+    color: var(--text-color);
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
+}
+.id__text{
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    left: -16px;
+}
+.tiket__price{
+    color: var(--text-color);
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+    margin-right: -12px;
+}
+.price__text{
+    position: absolute;
+    top: -10px;
+    left: -27px;
+}
+.giai-prize{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 22px 0 120px;
+
+}
+.giai{
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    right: 100px;
+
+}
+.prize{
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+}
+.prize__text{
+    position: absolute;
+    top: -16px;
+    left: -46px;
+}

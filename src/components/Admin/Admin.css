@@ -1,0 +1,80 @@
+.admin {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.jackpot-blance-admin {
+    justify-content: space-between;
+    background-color: #0b122e;
+    padding: 0 80px;
+    margin-bottom: 60px;
+}
+.admin__img {
+    position: absolute;
+    right: 28px;
+    top: -50px;
+    max-width: 55%;
+}
+.jackpot-lotery2-admin {
+    margin-top: 20px;
+    width: 240px;
+    padding:0 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    background: rgba(29, 40, 80, 0.302);
+}
+.stt-title-admin {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+}
+.jackpot-number-admin {
+    color: var(--pink-color);
+    margin-left: 58px !important;
+}
+.admin-manager {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 100px;
+}
+.enterQuantily-admin {
+    margin-left: 10px;
+    height: 50px;
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid #b4b8d1;
+    border-radius: 0px;
+    color: #a1aed4;
+}
+.enterQuantily-admin:focus{
+    outline: 0;
+}
+.adsend-loading{
+    margin: 14px 0 0 10px;
+}
+.autoadmin{
+  position: relative;
+}
+.btn-auto::before {
+    content: '';
+    position: absolute;
+    border: solid 1px var(--border-color);
+    height: 140px;
+    left: -275px;
+    top: 0px;
+}
+.btn-auto {
+    margin: 14px 0 0 10px;
+    color: var(--white-color);
+    background-color: #f9314b;
+}
+.dial-loading {
+    position: absolute;
+    top: 96px;
+    right: 22px;
+}
+.btn-auto:hover{
+    opacity: 0.8;
+}

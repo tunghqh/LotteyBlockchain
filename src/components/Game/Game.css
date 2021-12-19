@@ -1,0 +1,242 @@
+.minigame {
+    padding-top: 120px;
+}
+.Game{
+    width: 1200px;
+    margin:  auto;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    position: relative;
+    background: url(../assets/img/Games/playgame-bg.jpg);
+}
+.ticket-free {
+    color: var(--pink-color);
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.freeticket {
+    max-width: 1200px;
+    height: 350px;
+    margin: auto;
+    min-height: 300px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    display: none;
+    background: url(../assets/img/Games/newsletter.jpg);
+}
+.send-joy {
+    color: #fff;
+    text-align: center;
+
+}
+.active-ticket {
+    display: block;
+}
+.active-lotery {
+    display: block !important;
+}
+.result{
+    color: var(--pink-color);
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    
+}
+.result-text {
+    color: var(--text-color);
+}
+.player-result {
+    position: absolute;
+    top: 58px;
+    left: 180px;
+}
+.admin-result {
+    position: absolute;
+    top: 58px;
+    right: 180px;
+}
+.result-game {
+    font-size: 32px;
+    color: var(--text-color);
+    position: absolute;
+    top: 30px;
+    left: 550px;
+}
+.button-choose{
+    display: flex;
+    justify-content: center;
+}
+.btn-chon {
+    background: #15e7ce;
+    margin: 20px 10px;
+    color: #db77ad;
+    font-weight: 600;
+}
+.btn-chon:hover {
+    opacity: 0.8;
+}
+.keobuabao {
+    width: 30px;
+    margin-left: 4px;
+}
+.anhk {
+    width: 310px;
+    border-radius: 3px;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+.Buy_Ticket_one-games {
+    border: none !important;
+}
+.sss {
+    position: relative;
+}
+.pre-result-user {
+    position: absolute;
+    top: 150px;
+    left: 444px;
+}
+.pre-result-admin {
+    position: absolute;
+    top: 133px;
+    right: 444px;
+}
+.pre-reslut {
+    width: 150px;
+}
+.catad {
+    width: 258px;
+}
+.catuser {
+    height: 258px;
+}
+.table_container-game {
+    margin: auto;
+    box-sizing: border-box;
+    width: 1200px;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+.Buy_Ticket_Box-game{
+    height: 350px;
+    position: relative;
+    display: none;
+}
+.buy-tick-game{
+    color: var(--text-color);
+    text-align: center;
+    margin-left: 184px;
+}
+.buy-ticket-game {
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    color: var(--white-color);
+    background-color: #f9314b;
+}
+.buy-ticket-loading-game {
+    position: absolute;
+    top: 116px;
+    left: 244px;
+    color: var(--white-color);
+}
+.result-lottery-game {
+    position: absolute;
+    top: 114px;
+    left: 51px;
+    padding:0 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    background: rgba(29, 40, 80, 0.302);
+}
+.jackpot-lotery {
+    position: absolute;
+    top: 183px;
+    right: 51px;
+    padding:0 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    background: rgba(29, 40, 80, 0.302);
+}
+.jackpot-lotery2 {
+    position: absolute;
+    top: 44px;
+    right: 51px;
+    padding:0 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    background: rgba(29, 40, 80, 0.302);
+}
+.jackpot-number {
+    color: var(--pink-color);
+    margin-left: 45px !important;
+}
+
+.tangFreeTicket {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+.enterAddress {
+    width: 290px;
+    height: 50px;
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid #b4b8d1;
+    border-radius: 0px;
+    color: #a1aed4;;
+}
+.enterAddress:focus, .enterQuantily:focus {
+    outline: 0;
+}
+.enterQuantily {
+    margin-left: 10px;
+    width: 60px;
+    height: 50px;
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid #b4b8d1;
+    border-radius: 0px;
+    color: #a1aed4;;
+}
+.btn-tranfer {
+    margin: 14px 0 0 10px;
+    color: var(--white-color);
+    background-color: #f9314b;
+}
+.btn-tranfer:hover {
+    opacity: 0.8;
+}
+.tranfer-loading{
+    position: absolute;
+    top: 19px;
+    right: 334px;
+}
+.stt-title-game {
+    text-align: center;
+}
+.rules-right-game {
+    width: 400px;
+}
+.rules-games {
+    margin-top: 60px;
+}
+.nb1-game {
+    position: absolute;
+    top: -144px;
+    left: 40px;
+}
+.nb2-game{
+    position: absolute;
+    top: -144px;
+    left: 112px;
+}
+.nb3-game{
+    position: absolute;
+    top: -144px;
+    left: 187px;
+}

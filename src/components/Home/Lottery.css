@@ -1,0 +1,669 @@
+.Lottery{
+    height: 1000px;
+    margin-top: 76px;
+    margin-bottom: 2400px;
+}
+.bc-lottery {
+    position: relative;
+    height: 500px;
+}
+.ltr__img{
+    position: absolute;
+    right: 28px;
+    top: 110px;
+    max-width: 55%;
+}
+.title{
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 40px;
+}
+.lead__list {
+    list-style: none;
+    display: flex;
+    color: #fff;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+.lead__item {
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+.daily-lottery{
+    background-color: #0b122e;
+}
+.static-info{
+    margin-left: 80px;
+    
+}
+.single-staticstics{
+    padding: 16px 30px;
+    /* width: 370px; */
+    border-radius: 10px;
+    background-color: rgba(29, 40, 80, 0.302);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+    display: flex;
+    transition: all 0.3s ease-in;
+    margin: 20px;
+    transform: translateY(-45%);
+
+}
+.single-staticstics:hover {
+    transform: translateY(-50%);
+}
+.cup{
+    height: 42px;
+}
+.result-jacpot {
+   
+}
+.static-left {
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #0b122e;
+    margin-top: 20px;
+}
+.static-right {
+    flex: 1;
+    margin-bottom: 20px;
+}
+.stt-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 8px;
+}
+.stt-count{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #fff;
+    display: flex;
+}
+.result-number-text {
+    color: #faa61a !important;
+    font-weight: 400 !important;
+    border: 1px solid yellow !important;
+   
+    margin-left: 16px !important;
+}
+.eth-image {
+    margin-right: 6px;
+    position: absolute;
+    top: 55px;
+    left: 136px;
+}
+.jackpot-text {
+    font-size: 16px;
+}
+.stt-title-jp1 {
+    color: var(--pink-color);
+} 
+.mgl-50 {
+    margin-left: 50px !important;
+
+}
+.purchased {
+    font-size: 16px;
+    margin: 8px 0 0 4px ;
+}
+.daily-heading{
+    text-align: center;
+    margin-left: 210px;
+}
+
+
+.chao{
+    text-align: center;
+    color: var(--pink-color);
+    font-size: 30px;
+}
+
+.Timer_Loto{
+    width: 1200px;
+    height: 200px;
+    border: 1px solid var(--border-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-image: url(../assets/img/Lottery/drawtime.jpg);
+    color: #fff;
+    position: relative;
+
+}
+.timer-subtitile {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: var(--pink-color);
+    text-align: center;
+}
+
+ .Timer_Loto p {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+} 
+.Timer_Loto .tomeet{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+.dial {
+    position: absolute;
+    top: 92px;
+    right: 203px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-loading {
+  display: inline-block;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent !important;
+  border: 4px dotted var(--pink-color);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: button-loading-spinner 1.2s linear infinite;
+  margin:0 15px;
+  
+}
+@keyframes button-loading-spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Buy Ticket*/
+.Buy_Ticket_Box{
+    max-width: 1200px;
+    margin: auto;
+    min-height: 300px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+
+}
+
+.Buy_Ticket_Box h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.disabled:hover {
+    background-color: #4f5468 !important;
+    cursor:default !important;
+    color: #3d404f !important;
+}
+.Buy_Ticket-area{
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+
+}
+
+.Buy_Ticket_one{  
+    width: 600px;
+    border-right: 1px solid var(--border-color);
+    margin-left: 70px;
+    position: relative;
+}
+.Buy_Ticket_one h1{
+    text-align: center;
+}
+.Buy_One__List{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-left: 60px;
+    
+}
+.input_number{  
+    background: #1e202d;
+    display: flex;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    color: var(--pink-color);
+    font-weight: 600;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+
+}
+
+.buy-ticket {
+    position: absolute;
+    top: 150px;
+    left: 235px;
+    color: var(--white-color);
+    background-color: #f9314b;
+}
+.btn--primary:hover,.buy-ticket:hover {
+    /* color: #255487;
+  background-color: #2196f3; */
+  box-shadow: 0 0 5px #2196f3, 0 0 10px #2196f3, 0 0 15px #2196f3;
+  transition-delay: 0.1s;
+}
+.buy-ticket-loading {
+    position: absolute;
+    top: 150px;
+    left: 41%;
+}
+
+
+.Buy_Ticket__Alot{
+    padding-top: 0;
+    border-top: 0;
+    position: relative;
+   
+}
+
+.Alot_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    float: left;
+}
+
+.Alot_content_input{
+    width: 126px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    
+}
+.btn__tru{
+    width: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.input_quatity{
+    background: #0b122e;
+    display: block;
+    width: 46px;
+    height: 30px;
+    font-size: 28px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+
+}
+.btn__cong{
+    width: 30px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.btn__cong:hover,.btn__tru:hover{
+    cursor: pointer;
+    background-color: var(--pink-color);
+    color: #fff;
+}
+.Alot_content_text{
+    margin: 0 20px 0 20px;
+
+}
+.Alot_content_text span{
+    height: 46px;
+    line-height: 46px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Alot_content_button button{
+    width: 150px;
+    height: 46px;
+    font-size: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 72px;
+    right: -33px;;
+    /* border: none; */
+}
+.alot-loading {
+    position: absolute;
+    top: 75px;
+    right: 36px;
+}
+
+.box-number{
+    width: 130px;
+    height: 170px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    background-color: rgba(211, 174, 174, 0.6);
+    z-index: 1;
+}
+.box-number-title{
+    margin: auto;
+    color: #fff;
+    font-weight: 600;
+}
+/* .box-number::before {
+    content: '';
+    border-width: 20px 25px;
+    border-style: solid;
+    border-color: rgba(211, 174, 174, 0.6) transparent  transparent transparent; /* transparent màu trong suốt*/
+    /* position: absolute;
+    right: 43px;
+    bottom: -30px; */
+/* } */ 
+.nb1 {
+    position: absolute;
+    top: -117px;
+    left: 38px;
+}
+.choise-number {
+    text-align: center;
+}
+
+.item{
+        height: 28px;
+        width: 28px;
+        margin: 3.5px;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        background-color: #f5f2ff;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;    
+        transition: box-shadow .1s;
+        color: var(--pink-color);
+
+ 
+}
+.item-other {
+    color: var(--primary-color);
+    background-color: #ccc;
+}
+
+.item:hover{
+    box-shadow: 0 0 0 1px #5930ce inset;
+}
+
+
+
+.nb2 {
+    position: absolute;
+    top: -118px;
+    left: 112px;
+}
+
+
+.nb3 {
+    position: absolute;
+    top: -118px;
+    left: 187px;
+}
+
+
+.box_top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.box-clear{
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #ff4141;
+    cursor: pointer;
+    user-select: none;
+    text-transform: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box-clear span {
+    color: black;
+}
+
+
+/* table__ticket */
+.latest-activites {
+    margin-top: 160px;
+}
+
+
+.table_container{
+    margin: 20px auto;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 680px;
+    /* z-index: 1; */
+    overflow: hidden;
+  }
+  .table-scroll{
+    /*width:100%; */
+    display: none;
+    empty-cells: show;
+    
+    /* Decoration */
+    border-spacing: 0;
+    border: 1px solid;
+    background-color:#0f1937;
+    position: relative;
+  }
+  
+  .table-scroll thead{
+    background-color: #0b122e;  
+    position:relative;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    width:100%;
+    color: #fff;
+    height: 68px;
+
+  }
+  .table-iner table {
+    box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%); 
+  }
+
+
+.bloc-tabs {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 40%;
+    margin: 30px 0 60px 0;
+    justify-content: space-between;
+    margin-left: 360px;
+    z-index: 0;
+}
+.tabs {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.6s ease;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #252f5a;
+    margin: 0 20px;
+}
+.active-tabs {
+    background-color: var(--pink-color);
+}
+.active-content {
+    display: block;
+}
+  .table-scroll tbody{
+    display: block; position:relative;
+    width:100%; overflow-y:scroll;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  
+.table-scroll tbody::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+  .table-scroll tr{
+    width: 100%;
+    display:flex;
+  }
+
+.table-scroll th {
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 10px;
+    text-align:center;
+    font-size: 20px;
+}
+.reslt-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--pink-color);
+    background: -webkit-linear-gradient(
+        26deg, #0b122e 9%, #212643 39%, #363a58 100%);
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 80%);
+}
+.reslt-number-kq {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
+
+.table-scroll td{
+    flex-basis:100%;
+    flex-grow:2;
+    border-top: 0.2px solid var(--border-color) ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align:center;
+    font-size: 25px;
+    height: 80px;
+    justify-content: center;
+  }
+.table-player {
+    color: #fff;
+}
+.table-win-block{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.stake-user {
+    color: green;
+    font-size: 20px;
+}
+.user-icon {
+    font-size: 16px;
+}
+.stake-eth {
+    margin-left: 45px;
+}
+.stake-eth-20 {
+    margin-left: 20px;
+}
+.table-ticket,.table-win{
+    color: var(--text-color);
+}
+.table-price{
+    color: #045cf0;
+}
+.table-id-ticket {
+    color: var(--pink-color);
+}
+.table-prize,.table-id-round{
+    color: #f0ad4e;
+    position: relative;
+}
+.img-eth{
+    padding-right: 12px;
+    width: 40px;
+}
+.table-scroll tbody tr:nth-child(2n){
+    background-color: rgba(130,130,170,0.1);
+}
+  
+.body-half-screen{
+    max-height: 76vh;
+}
+.table-wrapper{
+    overflow: hidden;
+    max-width: 100%;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    box-shadow: 0px 15pc 20pc rgba(0, 0, 0, 0.1);
+}
+.Consolation-table{
+    color: green;
+}
+.jp-table{
+    color: red;
+}
+.title-text {
+    display: flex;
+    width: 200%;
+}
+.title-text .title {
+    width: 50%;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+
+}
+.table-prize {
+   justify-content: flex-start !important;
+}
+.pri {
+    margin-left: 32px !important;
+}
+.small-col{flex-basis:10%;}
+
+.choise {
+    background-image: url(../assets/img/Lottery/bg-shape.png);
+    background-repeat: no-repeat;
+    margin-top: 160px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
