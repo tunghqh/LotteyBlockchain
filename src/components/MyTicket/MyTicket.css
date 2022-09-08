@@ -41,7 +41,7 @@
     height: 60px;
     display: flex;
     margin: auto;
-
+    margin-bottom: 10px;
 }
 
 .power__play {

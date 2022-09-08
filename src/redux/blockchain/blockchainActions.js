@@ -74,11 +74,12 @@ export const connect = () => {
         });
 
          const NetworkData = await Lottery.networks[networkId];
-        if (NetworkData) {
+        if (networkId) {
           const SmartContractObj = new web3.eth.Contract(
-            Lottery.abi,
-            // SM.address
-             NetworkData.address
+            // Lottery.abi,
+            // NetworkData.address
+            SM.abi,
+            SM.address
            
           );
           dispatch(

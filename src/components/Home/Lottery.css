@@ -103,6 +103,7 @@
     margin-left: 16px !important;
 }
 .eth-image {
+    height: 44px;
     margin-right: 6px;
     position: absolute;
     top: 55px;
@@ -232,7 +233,8 @@
     display: flex;
     padding: 0;
     list-style: none;
-    margin-left: 60px;
+    margin-right: 38px;
+    justify-content: center;
     
 }
 .input_number{  
@@ -252,7 +254,14 @@
     box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
 
 }
-
+.input_number:hover {
+    cursor: pointer;
+}
+.button-disable{
+    background-color:#666;
+    color: #999;
+    cursor: default !important;
+}
 .buy-ticket {
     position: absolute;
     top: 150px;
@@ -381,7 +390,7 @@
 .nb1 {
     position: absolute;
     top: -117px;
-    left: 38px;
+    left: 39px;
 }
 .choise-number {
     text-align: center;
@@ -417,14 +426,14 @@
 .nb2 {
     position: absolute;
     top: -118px;
-    left: 112px;
+    left: 100px;
 }
 
 
 .nb3 {
     position: absolute;
     top: -118px;
-    left: 187px;
+    left: 172px;
 }
 
 
@@ -595,7 +604,8 @@
     font-size: 16px;
 }
 .stake-eth {
-    margin-left: 45px;
+    height: 20px;
+    margin-left: 12px;
 }
 .stake-eth-20 {
     margin-left: 20px;

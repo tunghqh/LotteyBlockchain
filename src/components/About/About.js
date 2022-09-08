@@ -11,6 +11,7 @@ import icon5 from "../assets/img/about/reward.png"
 import icon6 from "../assets/img/about/icon3.png"
 import com from "../assets/img/about/community-icon.png"
 import blog from "../assets/img/about/blog-icon.png"
+import prize from "../assets/img/about/prize.png"
 
 
 
@@ -69,6 +70,53 @@ function About(){
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div className="prize-structure">
+            <div className="grid prize-structure-container">
+               
+                    <div className="">
+                        <h1 className='title-structure'>Prize structure</h1>
+                        <table className='table-prize-about'>
+                            <tr className='table-about-name'>
+                                <th>Prize</th>
+                                <th>Result</th>
+                                <th>Prize value (BNB)</th>
+                            </tr>
+                            <tr className='table-about-text'>
+                                <td>Jackpot1</td>
+                                <td>
+                                    <button className="item-about"></button><button className="item-about"></button>
+                                    <button className="item-about"></button><button className="item-about-text"></button>
+                                </td>
+                                <td>Minimum at 1 BNB and accumulated</td>
+                            </tr>
+                            <tr className='table-about-text'>
+                                <td>Jackpot2</td>
+                                <td>
+                                <button className="item-about"></button><button className="item-about"></button>
+                                    <button className="item-about"></button><button className="item-about-none"></button>
+                                </td>
+                                <td>Accumulated 1 round</td>
+                            </tr>
+                            <tr className='table-about-text'>
+                                <td>Consolation</td>
+                                <td>
+                                <button className="item-about"></button><button className="item-about"></button>
+                                <button className="item-about-none"></button><button className="item-about-none"></button>
+                                </td>
+                                <td>0.02</td>
+                            </tr>
+                        </table>
+                        <div className="section-heading-prize">
+                            <h5 className="subtitle-prize">NOTE</h5>
+                                <li className="text-prize-about"><button className="item-about"></button> The entry numbers are identical to the result numbers without exact order</li>
+                                <li className="text-prize-about"><button className="item-about-text"></button> Random characters are assigned to match the result</li>
+                                <li className="text-prize-about">If there are several Jackpot winners, the Jackpot prize value will be equally divided among winners corresponding to each player's entry value</li>
+                        </div>
+                    
+                    
                 </div>
             </div>
         </div>

@@ -83,17 +83,17 @@ function Lottery() {
   useEffect(() => {
       startTimer();
 
-      var delay = 0 ;
+      // var delay = 0 ;
 
-      delay = () =>{
-        setTimeout(() => {
-          dispatch(fetchData(blockchain.account)); 
-        }, 30000);        
-      }
+      // delay = () =>{
+      //   setTimeout(() => {
+      //     dispatch(fetchData(blockchain.account)); 
+      //   }, 30000);        
+      // }
       
-      if(days == 0 && hours==0 && minutes == 0 && seconds == 0){
-        delay();
-      }
+      // if(days == 0 && hours==0 && minutes == 0 && seconds == 0){
+      //   delay();
+      // }
       // else {
       //   clearTimeout(delay)
       // }
@@ -454,7 +454,7 @@ useEffect(() => {
             <h1>GAME IS RUNNING IN DEMO MODE</h1>
           <div className="Buy_Ticket-area">
             <div className="Buy_Ticket_one">
-              <h1>Enter your favorite number</h1>
+              <h1>Enter your 3 favorite number</h1>
             
                   <ul className="Buy_One__List">
                     <li>
@@ -474,20 +474,19 @@ useEffect(() => {
                     </li>
                     <li>
                       <div>
-                      <input type='button'  className="input_number" />
+                      <input type='button'  className="input_number button-disable" />    
                       </div>
                     </li>
                     <li>
                       <div>
-                      <input type='button'  className="input_number" />
+                      <input type='button'  className="input_number button-disable" />    
                       </div>
                     </li>
                     <li>
                       <div>
-                      <input type='button'  className="input_number" />
+                      <input type='button'  className="input_number button-disable" />    
                       </div>
                     </li>
-                
                   </ul>
                   {!loadingBuy ? <button onClick={submitValue} className="buy-ticket btn">Buy Ticket</button> : 
                   <button className=" buy-ticket-loading btn-loading" /> }
@@ -727,7 +726,7 @@ useEffect(() => {
                                     
                                   </div>
                                   <div className="stake-eth-20">
-                                    <FaEthereum className="user-icon"/>
+                                    <img src={eth} alt="" className="stake-eth"/>
                                     <span>0.02</span>
                                   </div>
                                 </div>
@@ -740,7 +739,7 @@ useEffect(() => {
                                       {round.Jackpots2.toString()}
                                     </div>
                                     <div className="stake-eth">
-                                      <FaEthereum className="user-icon"/>
+                                      <img src={eth} alt="" className="stake-eth"/>
                                       {parseFloat(web3.utils.fromWei(round.total, 'ether')).toFixed(3)}
                                     </div>
                                 </div>
@@ -753,7 +752,7 @@ useEffect(() => {
                                     {round.Jackpots1.toString()}
                                   </div>
                                   <div className="stake-eth">
-                                      <FaEthereum className="user-icon"/>
+                                      <img src={eth} alt="" className="stake-eth"/>
                                     {  parseFloat(web3.utils.fromWei(round.totalJP1, 'ether')).toFixed(3)}
                               
                                     </div>

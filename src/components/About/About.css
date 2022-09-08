@@ -82,6 +82,89 @@
 .section-heading {
     text-align: center;
 }
+.prize-structure {
+    padding-top: 40px;
+    height: 800px;
+    background-color: #101731;
+}
+.prize-structure-container {
+    display: flex;
+    justify-content: center;
+}
+.table-prize-about {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.title-structure {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.table-about-name {
+    background-color: var(--pink-color);
+    height: 100px;
+    color: #fff;
+    font-size: 39px;
+    font-weight: 600;
+}
+.item-about {
+    height: 30px;
+    width: 30px;
+    margin: 3.5px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: green;
+    border: 0;
+    border-radius: 50%;
+}
+.item-about-text{
+    height: 30px;
+    width: 30px;
+    margin: 3.5px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: yellow;
+    border: 0;
+    border-radius: 50%;
+}
+.item-about-none{
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    margin: 3.5px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 0;
+    border-radius: 50%;
+}
+.table-about-text{
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    height: 80px;
+    text-align: center;
+    font-size: 36px;
+}
+.subtitle-prize{
+    color: var(--pink-color);
+    margin: 0;
+    padding-top: 20px;
+}
+.text-prize-about {
+    color: var(--text-color);
+    font-size: 18px;
+}
+.prize-about-img {
+    position: absolute;
+    top: -180px;
+    right: -126px;
+}
 .single-feature{
     display: flex;
     border: 1px solid #273b71;

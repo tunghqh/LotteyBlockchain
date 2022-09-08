@@ -506,39 +506,38 @@ function Game() {
               <div className="Buy_Ticket_one Buy_Ticket_one-games">
                 <span className="buy-tick-game">Enter your favorite number</span>
               
-                    <ul className="Buy_One__List">
-                      <li>
-                        <div>
-                        <input type='button' className="input_number ip1" onChange={e => setNum1(e.target.value)} onClick={()=>setShow1(!show1)} required/>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                        <input type='button'  className="input_number ip2" onChange={e => setNum2(e.target.value)} onClick={()=>setShow2(!show2)} required/>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                        <input type='button'  className="input_number ip3" onChange={e => setNum3(e.target.value)}  onClick={()=>setShow3(!show3)}  required/>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                        <input type='button'  className="input_number" />
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                        <input type='button'  className="input_number" />
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                        <input type='button'  className="input_number" />
-                        </div>
-                      </li>
-                  
-                    </ul>
+                <ul className="Buy_One__List">
+                    <li>
+                      <div>
+                      <input type='button' className="input_number ip1" onChange={e => setNum1(e.target.value)} onClick={()=>setShow1(!show1)} required/>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <input type='button'  className="input_number ip2" onChange={e => setNum2(e.target.value)} onClick={()=>setShow2(!show2)} required/>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <input type='button'  className="input_number ip3" onChange={e => setNum3(e.target.value)}  onClick={()=>setShow3(!show3)}  required/>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <input type='button'  className="input_number button-disable" />    
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <input type='button'  className="input_number button-disable" />    
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <input type='button'  className="input_number button-disable" />    
+                      </div>
+                    </li>
+                  </ul>
                     {!loadingBuy ? <button onClick={submitValue} className="buy-ticket-game btn">Buy Ticket</button> : <button className=" buy-ticket-loading-game btn-loading" /> }
 
 
